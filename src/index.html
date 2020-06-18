@@ -11,21 +11,20 @@
   </head>
   <body>
     <section class="main">
-      <button id="show-popup-form" class="btn btn-main" onclick="openForm()">Click me!</button>
-      <!-- Display success message below -->
+      <button id="show-popup-form" class="btn btn-main" onclick="openForm();">Click me!</button>
+      <div id="message" class="message">Thank you!</div>
     </section>
     <div class="popup" id="myForm">
-      <form action="#" name="loginForm" class="form-container" id="" onsubmit="return validate()">
+      <form id="FormLog" action="#" class="form-container">
         <h1>Login</h1>
         <input type="text" id="email" class="form-control" placeholder="E-mail" name="email">
         <input type="password" id="password" class="form-control" placeholder="Password" name="psw">
-        <input type="checkbox" id="agree_check" name="terms" required>
-        <span class="checkboxtext" required>I agree to terms & conditions.</span>
-        <button type="submit" id="submit" class="btn_submit">SUBMIT</button>
+        <input type="checkbox" id="agree_check" name="terms">
+        <span class="checkboxtext">I agree to terms & conditions.</span>
+        <input type="submit" onclick="validate();" id="submit" class="btn_submit" value="SUBMIT">
         <div data-dismiss="modal" class="close" onclick="closeForm()">&#10010;</div>
       </form>
     </div>
-
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>
 </html>
