@@ -45,6 +45,10 @@ h1 {
     margin: 23px 0px 10px 10px;
   }
 
+  .btn_submit:hover {
+    background-color: salmon;
+  }
+
   .close {
     background-color: black;
     color: white;
@@ -69,4 +73,9 @@ h1 {
   {
     transform: scale(1.5);
     margin-left: 12px;
+  }
+
+  .error-form {
+    color:red;
+    visibility: hidden;
   }
